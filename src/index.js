@@ -8,4 +8,6 @@ const client = new Client ({
 ]
 });
 
-client.login ("MTEwMjY1MTcyODQ1ODk0MDQ1Ng.G5dqca.xQKz53SpyXzJiRAhbIjMSiV8Nm_0sKJUAW3sAo");
+// client.on('ready' , (c)=>)
+
+client.login ("BOT_TOKEN");
