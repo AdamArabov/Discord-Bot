@@ -8,6 +8,8 @@ const client = new Client ({
 ]
 });
 
-// client.on('ready' , (c)=>)
+client.on('ready', (c)=>{
+    console.log(`Bot is ready as ${c.user.tag}`);
+})
 
-client.login ("BOT_TOKEN");
+client.login ("MTEwMjY1MTcyODQ1ODk0MDQ1Ng.GmQpd2.aJGkIj5XmbL2GkpbGetiqlNmpVVKUkFeWUPY6o");
