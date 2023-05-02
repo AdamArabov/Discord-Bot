@@ -21,4 +21,13 @@ if(msg.author.bot) return;
     }
 })
 
+client.on('interactionCreate',(interaction) => {
+    if(!interaction.isChatInputCommand())
+    return;
+
+   if(interaction.commandName === 'hey'){
+    interaction.reply('Hey')
+   }
+})
+
 client.login (process.env.TOKEN);
