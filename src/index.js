@@ -25,12 +25,14 @@ client.on('interactionCreate',(interaction) => {
     if(!interaction.isChatInputCommand())
     return;
 
-   if(interaction.commandName === 'embed'){
-    const embed = new EmbedBuilder()
+   if(interaction.commandName === 'checkpoint'){
+    const checkpoint = new EmbedBuilder()
     .setTitle("Checkpoint Bot")
+    .setURL('https://d2checkpoint.com/')
     .setDescription("Easy way to grab a checkpoint")
+    .setColor(0xF13F63)
 
-    interaction.reply({embeds: [embed]})
+    interaction.reply({embeds: [checkpoint]})
    }
 })
 

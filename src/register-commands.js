@@ -3,8 +3,8 @@ const { REST, Routes } = require('discord.js');
 
 const commands = [
     {
-        name: 'embed',
-        description: 'Sends and embed!'
+        name: 'checkpoint',
+        description: 'Reveals CheckpointBot Location'
     },
    
 ];
