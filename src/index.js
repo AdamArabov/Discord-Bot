@@ -1,5 +1,5 @@
 require('dotenv').config();
-const {Client, IntentsBitField} = require ('discord.js');
+const {Client, IntentsBitField, EmbedBuilder} = require ('discord.js');
 const client = new Client ({
     intents: [    
         IntentsBitField.Flags.Guilds,
@@ -25,8 +25,12 @@ client.on('interactionCreate',(interaction) => {
     if(!interaction.isChatInputCommand())
     return;
 
-   if(interaction.commandName === 'hey'){
-    interaction.reply('Hey')
+   if(interaction.commandName === 'embed'){
+    const embed = new EmbedBuilder()
+    .setTitle("Checkpoint Bot")
+    .setDescription("Easy way to grab a checkpoint")
+
+    interaction.reply({embeds: [embed]})
    }
 })
 
