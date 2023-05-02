@@ -3,9 +3,10 @@ const { REST, Routes } = require('discord.js');
 
 const commands = [
     {
-        name: 'hey',
-        description: 'Replies with hey!'
+        name: 'embed',
+        description: 'Sends and embed!'
     },
+   
 ];
 
 const rest = new REST({ version: '10'}).setToken(process.env.TOKEN);
