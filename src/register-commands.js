@@ -22,5 +22,7 @@ const rest = new REST({ version: '10'}).setToken(process.env.TOKEN);
         );
     } catch (error) {
         console.error(error);
+        console.error(error);
+
     }
 })();
